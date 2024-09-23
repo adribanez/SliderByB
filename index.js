@@ -11,7 +11,7 @@ function showSlide(index) {
     currentIndex = index;
   }
 
-  const offset = -currentIndex * 100; // Calculamos el porcentaje para el translateX
+  const offset = -currentIndex * 100;
   slides.style.transform = `translateX(${offset}%)`;
 }
 
@@ -21,7 +21,7 @@ function moveSlide(n) {
 
 function autoSlide() {
   moveSlide(1);
-  setTimeout(autoSlide, 5000); // Cambia cada 5 segundos
+  setTimeout(autoSlide, 8000);
 }
 
 window.onload = () => {
